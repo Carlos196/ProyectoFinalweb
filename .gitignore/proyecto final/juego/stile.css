@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    background-color: #e995ca;
+    padding-top: 5px;
+}
+#capaMadre {
+    max-width: 750px;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 50px 50px;
+    background: #feebca;
+    box-shadow: 0 0 10px rgba(0,0,0,.6), inset 0 0 90px rgba(182,144,73,.9), inset 0 0 90px #fff;
+    border: 3px solid #e960a6;
+    border-radius: 15px;
+}
+header {
+    margin: auto;
+    text-align: center;
+    background-image: url(img/tiffi.png), url(img/Mr-toffee.png), url(img/background_header.jpg);
+    background-size: 25%, 25%, 100%;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position: left 20px bottom, right 40px bottom -200px, center;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+section{
+	background-color: #e995ca;
+    background-image: url(img/Wiki-background.jpg);
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 10px;
+}
+.estadisticas {
+    background-color: #FA58D0;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.estadisticas div {
+    display: inline-block;
+    background-color:#ffe6f7;
+    padding: 5px;
+    border-radius: 8px;
+    margin-right: 20px;
+    font-size: 15px;
+    font-family: Comic Sans MS, arial;
+}
+.estadisticas > div > div {
+    background-color: #fff;
+    margin: auto 0;
+    vertical-align: middle;
+    border: 1px solid #e960a6;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+table {
+    margin: auto;
+    background-color: rgba(58, 98, 162,0.7);
+    box-shadow: 0 0 10px;
+    border-radius: 20px;
+    padding: 5px;
+}
+table tr td {
+    border-radius: 20%;
+    background-color: rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+table img {
+    width: 60px;
+}
+table tr td:hover {
+    background-color: yellow;
+}
+#destroy button {
+    border: 1px solid #e960a6;
+    background-color: #e995ca;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+}
+#destroy button:hover {
+    background-color: #ffe6f7;
+}
+.eliminado{
+    transform:scale(1);
+    animation-name: eli;
+    animation-duration: 0.5s;
+}
+
+@keyframes eli {
+    0%   { transform:scale(1);}
+    100% { transform:scale(0);
+        display: none;}
+}
